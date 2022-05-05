@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./scripts/modal.js"></script>
+    <script defer src="./scripts/game.js"></script>
+    <title>CYOA Game</title>
+  </head>
+  <body>
+    <section class="info-section">
+      <button data-modal-target="#skills-modal" class="info-button" id="skills">Skills</button>
+      <button data-modal-target="#inventory-modal" class="info-button" id="inventory">Inventory</button>
+    </section>
+    <section class="container" id="main-section">
+      <div id="text">TEXT</div>
+      <div id="option-buttons" class="btn-grid">
+        <button class="btn">Option 1</button>
+        <button class="btn">Option 2</button>
+        <button class="btn">Option 3</button>
+        <button class="btn">Option 4</button>
+      </div>
+    </section>
+    <section id="modal-section">
+      <div class="modal" id="skills-modal">
+        <div class="modal-header">
+          <div class="title">Skills</div>
+          <button data-close-button class="close" id="close">&times;</button>
+        </div>
+        <div class="modal-body" id="skill-body">COMING IN A LATER PATCH</div>
+      </div>
+      <div class="modal" id="inventory-modal">
+        <div class="modal-header">
+          <div class="title">Inventory</div>
+          <button data-close-button class="close" id="close">&times;</button>
+        </div>
+        <div class="modal-body" id="inventory-body">
+          <div class="contentBx">
+            <div class="label">BackPack Items</div>
+            <div class="content" id="backpack-content"></div>
+          </div>
+          <div class="contentBx">
+            <div class="label">Weapons</div>
+            <div class="content" id="weapons-content"></div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay" id="overlay"></div>
+    </section>
+  </body>
+</html>
